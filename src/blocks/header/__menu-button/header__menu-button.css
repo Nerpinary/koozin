@@ -1,0 +1,9 @@
+.header__menu-button{
+    background: url(../../../images/menu-button.svg) no-repeat;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+}

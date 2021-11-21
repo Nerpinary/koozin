@@ -1,0 +1,10 @@
+.start__title{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -1.1px;
+    transform: translateX(-78px);
+    margin: 0 0 15px;
+    color: #DDDCD9;
+}

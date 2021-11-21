@@ -1,0 +1,16 @@
+.step1__radio{
+    display: none;
+}
+
+/* .step1__radio + label{
+    opacity: 0.5;
+}
+
+.step1__radio:disabled + label{
+    opacity: 0.5;
+} */
+
+.step1__radio:checked + label{
+    transform: scale(1.5);
+    opacity: 1;
+}

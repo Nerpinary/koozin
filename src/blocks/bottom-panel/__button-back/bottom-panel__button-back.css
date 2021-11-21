@@ -1,0 +1,13 @@
+.bottom-panel__button-back{
+    background: url(/src/images/arrow.svg) no-repeat center;
+    transform: rotate(180deg);
+    border: none;
+    width: 88px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.bottom-panel__button-back:hover{
+    transition: opacity 0.3s;
+    opacity: 0.5;
+}

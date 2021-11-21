@@ -1,0 +1,9 @@
+.header__cart-button{
+    background: url(../../../images/cart-button.svg) no-repeat;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}

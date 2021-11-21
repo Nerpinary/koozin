@@ -1,0 +1,22 @@
+.bottom-panel__button-next{
+    background: url(/src/images/arrow.svg) no-repeat center right;
+    height: 56px;
+    padding: 8px 50px 8px 24px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.15px;
+    border: none;
+    cursor: pointer;
+    margin: 0 24px 0 0;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    display: flex;
+}
+
+.bottom-panel__button-next:hover{
+    transition: opacity 0.3s;
+    opacity: 0.5;
+}

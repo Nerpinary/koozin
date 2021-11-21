@@ -1,0 +1,8 @@
+.main__right-button{
+    border: none;
+    background: url(../../../images/arrow-right.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    transform: rotate(180deg);
+}

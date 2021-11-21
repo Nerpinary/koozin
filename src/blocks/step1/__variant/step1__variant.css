@@ -1,0 +1,11 @@
+.step1__variant{
+    width: 240px;
+    /* opacity: 0.5; */
+    position: relative;
+}
+
+/* .step1__variant:hover{
+    transition: opacity 0.3s;
+    opacity: 1;
+    cursor: pointer;
+} */

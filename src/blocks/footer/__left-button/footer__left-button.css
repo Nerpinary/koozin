@@ -1,0 +1,7 @@
+.footer__left-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url(../../../images/arrow.svg);
+    transform: rotate(180deg);
+}

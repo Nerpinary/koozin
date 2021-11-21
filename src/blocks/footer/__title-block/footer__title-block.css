@@ -1,0 +1,8 @@
+.footer__title-block{
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 13px;
+}

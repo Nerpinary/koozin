@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(./normalize.css);
+@import url(./App.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__cart-button/header__cart-button.css);
+@import url(./blocks/header/__left/header__left.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__menu-button/header__menu-button.css);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__link/_selected/header__link_selected.css);
+@import url(./blocks/start/start.css);
+@import url(./blocks/start/__image/start__image.css);
+@import url(./blocks/start/__text-block/start__text-block.css);
+@import url(./blocks/start/__number-block/start__number-block.css);
+@import url(./blocks/start/__title/start__title.css);
+@import url(./blocks/start/__number/start__number.css);
+@import url(./blocks/start/__text/start__text.css);
+@import url(./blocks/start/__button/start__button.css);
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_opened/popup_opened.css);
+@import url(./blocks/popup/__container/popup__container.css);
+@import url(./blocks/popup/__number/popup__number.css);
+@import url(./blocks/popup/__text/popup__text.css);
+@import url(./blocks/step1/step1.css);
+@import url(./blocks/step1/__left-arrow/step1__left-arrow.css);
+@import url(./blocks/step1/__left-arrow/_hidden/step1__left-arrow_hidden.css);
+@import url(./blocks/step1/__right-arrow/step1__right-arrow.css);
+@import url(./blocks/step1/__right-arrow/_hidden/step1__right-arrow_hidden.css);
+@import url(./blocks/step1/__choose/step1__choose.css);
+@import url(./blocks/step1/__radio/step1__radio.css);
+@import url(./blocks/step1/__radio/_active/step1__radio-active.css);
+@import url(./blocks/step1/__variant/step1__variant.css);
+@import url(./blocks/step1/__image/step1__image.css);
+@import url(./blocks/bottom-panel/bottom-panel.css);
+@import url(./blocks/bottom-panel/__button-back/bottom-panel__button-back.css);
+@import url(./blocks/bottom-panel/__button-next/bottom-panel__button-next.css);
+@import url(./blocks/step2/__caption/step2__caption.css);
+@import url(./blocks/step2/__arrows/step2__arrows.css);
+@import url(./blocks/step2/__pocket/step2__pocket.css);
+@import url(./blocks/step2/_opacity/step2_opacity_05.css);
+@import url(./blocks/step2/_opacity/step2_opacity_1.css);
+@import url(./blocks/popup/__basket/popup__basket.css);
+@import url(./blocks/basket/__positions/basket__posotions.css);
+@import url(./blocks/basket/__slot/basket__slot.css);
+@import url(./blocks/basket/__image/basket__image.css);
+@import url(./blocks/basket/__hoody/basket__hoody.css);
+@import url(./blocks/basket/__caption/basket__caption.css);
+@import url(./blocks/basket/__pocket/basket__pocket.css);
