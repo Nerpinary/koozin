@@ -4,6 +4,9 @@
     width: 160px;
     height: 160px;
     cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 10;
 }
 
 .step1__left-arrow:hover{
@@ -14,4 +17,14 @@
 .step1__left-arrow:disabled{
     transition: opacity 0.3s;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 480px) {
+    .step1__left-arrow{
+        position: fixed;
+        left: 0;
+        top: calc(50vh - 80px);
+        width: 40px;
+        height: 160px;
+    }
 }

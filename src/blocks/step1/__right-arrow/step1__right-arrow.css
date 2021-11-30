@@ -5,6 +5,9 @@
     height: 160px;
     transform: rotate(180deg);
     cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 10;
 }
 
 .step1__right-arrow:hover{
@@ -15,4 +18,14 @@
 .step1__right-arrow:disabled{
     transition: opacity 0.3s;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 480px) {
+    .step1__right-arrow{
+        position: fixed;
+        right: 0;
+        top: calc(50vh - 80px);
+        width: 40px;
+        height: 160px;
+    }
 }

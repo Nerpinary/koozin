@@ -1,0 +1,6 @@
+.bottom-panel__colors {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}

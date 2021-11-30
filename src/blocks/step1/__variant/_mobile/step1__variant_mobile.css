@@ -1,0 +1,10 @@
+.step1__variant_mobile {
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .step1__variant_mobile {
+        display: none;
+    }
+}
+

@@ -6,7 +6,8 @@ import { Step1 } from './Step1';
 import BottomPanel from './BottomPanel';
 import Step2 from './Step2';
 import Step3 from './Step3';
-import Basket from './Basket';
+import Color from "./Color";
+// import Basket from './Basket';
 
 function App() {
   return (
@@ -21,14 +22,11 @@ function App() {
           <BottomPanel 
           back='/'
           next='/step2'
+          colors={['']}
           />
         </Route>
         <Route path='/step2'>
           <Step2 />
-          <BottomPanel 
-          back='/step1'
-          next='/step3'
-          />
         </Route>
         <Route path='/step3'>
           <Step3 />
@@ -37,13 +35,13 @@ function App() {
           next='/basket'
           />
         </Route>
-        <Route path='/basket'>
-          <Basket />
-          <BottomPanel 
-          back='/step3'
-          next='/'
-          />
-        </Route>
+        {/*<Route path='/basket'>*/}
+        {/*  <Basket />*/}
+        {/*  <BottomPanel */}
+        {/*  back='/step3'*/}
+        {/*  next='/'*/}
+        {/*  />*/}
+        {/*</Route>*/}
       </Switch>
     </div>
   );

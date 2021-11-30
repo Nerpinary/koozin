@@ -1,4 +1,11 @@
 .step1__choose{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .step1__choose{
+        height: calc(100vh - 150px);
+    }
 }

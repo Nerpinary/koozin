@@ -1,0 +1,13 @@
+.bottom-panel__color-choose {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .bottom-panel__color-choose {
+        display: none;
+    }
+}

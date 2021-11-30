@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import hoody from '../images/base__a_black.png'
+import hoody from '../images/opt/A/a__black_false_disabled_base-only.png'
 
 export default function Start() {
     return(

@@ -11,6 +11,6 @@
 } */
 
 .step1__radio:checked + label{
-    transform: scale(1.5);
+    transform: scale(1.3);
     opacity: 1;
 }

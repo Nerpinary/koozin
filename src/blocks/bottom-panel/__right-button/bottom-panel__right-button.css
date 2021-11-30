@@ -1,0 +1,11 @@
+.bottom-panel__right-button {
+    background: url(/src/images/arrow-right.svg) no-repeat center;
+    border: none;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+}
