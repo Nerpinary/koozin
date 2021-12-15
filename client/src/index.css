@@ -1,0 +1,15 @@
+@import url(./fonts/Inter/Inter.css);
+@import url(./fonts/Raleway/Raleway.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__left/header__left.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__menu-button/header__menu-button.css);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__cart-button/header__cart-button.css);
+
+body{
+    font-family: 'Inter', 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    margin: 0!important;
+    background-color: #161616!important;
+    color: white;
+}

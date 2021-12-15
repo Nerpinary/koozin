@@ -1,0 +1,21 @@
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    padding: 0 45px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    background-color: #161616;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        width: 100%;
+        padding: 0;
+    }
+}
