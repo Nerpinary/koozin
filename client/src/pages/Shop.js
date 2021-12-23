@@ -48,7 +48,6 @@ const Shop = observer(() => {
                 alignSelf: 'start',
                 marginLeft: 32,
                 fontWeight: 'normal',
-                marginTop: -100,
                 fontFamily: 'Raleway'
             }}>Собери худи<br />
                 <span style={{
