@@ -1,0 +1,9 @@
+.colortexts {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.colortexts_active {
+    opacity: 1;
+    transition: opacity 1s;
+}

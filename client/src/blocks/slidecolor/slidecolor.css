@@ -1,0 +1,4 @@
+.slidecolor{
+    transform: scale(1.3)!important;
+    transition: transform 0.2s;
+}

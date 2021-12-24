@@ -7,6 +7,7 @@ import ProductItem from "../components/ProductItem";
 import arrow from '../images/arrow.svg'
 import {STEP1_ROUTE} from "../utils/consts";
 import {useHistory} from "react-router-dom";
+import StartSwiper from "../components/StartSwiper";
 
 const Shop = observer(() => {
 
@@ -40,7 +41,8 @@ const Shop = observer(() => {
             display: "flex",
             alignItems: "center",
             flexDirection: "column"}}>
-            <ProductItem key={startProd.id} product={startProd}/>
+            <StartSwiper />
+            {/*<ProductItem key={startProd.id} product={startProd}/>*/}
             <h1 style={{
                 fontSize: 28,
                 color: 'white',
@@ -142,7 +144,7 @@ const Shop = observer(() => {
             </div>
             <button className='' style={{
                 backgroundColor: 'transparent',
-                color: "#F9E74D",
+                color: "#ED5A51",
                 alignSelf: 'end',
                 border: 'none',
                 backgroundImage: arrow,
@@ -153,7 +155,7 @@ const Shop = observer(() => {
                 alignText: 'center',
                 marginTop: 32,
                 marginBottom: 100
-            }} onClick={() => history.push(STEP1_ROUTE)}>Приступим</button>
+            }} onClick={() => history.push(STEP1_ROUTE)}>Приступим<img src={arrow} /></button>
         </Container>
     );
 });

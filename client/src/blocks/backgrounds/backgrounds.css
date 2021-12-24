@@ -1,0 +1,65 @@
+.backgrounds {
+    display: flex;
+}
+
+.backgrounds-black {
+    background-color: #161616;
+    transition: background-color 0.5s;
+    animation: glitch-anim-2-vertical 1s linear;
+}
+.backgrounds-white {
+    background-color: #bdb0a4;
+    transition: background-color 0.5s;
+    animation: glitch-effect3 0.5s linear;
+}
+
+.backgrounds-grey {
+    background-color: #36363D;
+    transition: background-color 0.5s;
+    animation: glitch-effect1 0.5s linear;
+}
+
+@keyframes glitch-effect1 {
+    0% {
+        -webkit-clip-path: polygon(0 0%, 0 100%, 1% 100%, 1% 0);
+        clip-path: polygon(0 0%, 0 100%, 1% 100%, 1% 0);
+    }
+    50% {
+        -webkit-clip-path: polygon(0 0%, 0% 100%, 51% 100%, 51% 0%);
+        clip-path: polygon(0 0%, 0% 100%, 51% 100%, 51% 0%);
+    }
+    100% {
+        -webkit-clip-path: polygon(0 0%, 0% 100%, 100% 100%, 100% 0%);
+        clip-path: polygon(0 0%, 0% 100%, 100% 100%, 100% 0%);
+    }
+}
+
+@keyframes glitch-effect2 {
+    0% {
+        -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+        clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+    }
+    50% {
+        -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 50%, 0 50%);
+        clip-path: polygon(0 1%, 100% 1%, 100% 50%, 0 50%);
+    }
+    100% {
+        -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 100%, 0 100%);
+        clip-path: polygon(0 1%, 100% 1%, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes glitch-effect3 {
+    0% {
+        -webkit-clip-path: polygon(100% 0%, 100% 100%, 99% 100%, 99% 0);
+        clip-path: polygon(100% 0%, 100% 100%, 99% 100%, 99% 0);
+    }
+    50% {
+        -webkit-clip-path: polygon(100% 0%, 100% 100%, 51% 100%, 51% 0%);
+        clip-path: polygon(100% 0%, 100% 100%, 51% 100%, 51% 0%);
+    }
+    100% {
+        -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
+}

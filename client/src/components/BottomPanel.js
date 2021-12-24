@@ -1,40 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Color from "./Color";
+import arrow from '../images/arrowWhite.svg'
+import Step1ColorCarousel from "./Step1ColorCarousel";
 
 
-export default function BottomPanel({back, next, colors}) {
+export default function BottomPanel() {
 
-    function checkArrows() {
-        const left = document.querySelector('.bottom-panel__left-button')
-        const right = document.querySelector('.bottom-panel__right-button')
-
-        if (colors.length === 1) {
-            left.style.display = 'none'
-            right.style.display = 'none'
-            console.log('noDisp')
-        } else {
-            left.style.display = 'block'
-            right.style.display = 'block'
-            console.log('Disp')
-        }
-    }
-
-    setTimeout(checkArrows, 2900)
 
     return(
-        <div className='bottom-panel'>
-            <Link to={back} className='bottom-panel__button-back' />
-            <div className='bottom-panel__color-choose'>
-                <button className='bottom-panel__left-button' />
-                <ul className='bottom-panel__colors'>
-                    {colors.map((item) => (
-                        item
-                    ))}
-                </ul>
-                <button className='bottom-panel__right-button' />
+        <div style={{background: '#161616', position: 'fixed', bottom: 0, left: 0, width: '100vw', height: '120px'}}>
+            <div style={{height: '4px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: 0}}>
+                <div style={{width: '49%', borderRadius: '4px', color: '#ED5A51'}}></div>
+                <div style={{width: '24%', borderRadius: '4px', color: '#f4f4f4'}}></div>
+                <div style={{width: '24%', borderRadius: '4px', color: '#f4f4f4'}}></div>
             </div>
-            <Link to={next} className='bottom-panel__button-next'>Продолжить</Link>
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+                <Link to='/' style={{border: 'none', background: 'transparent', height: '28px'}}>
+                    <img style={{height: '28px', transform: 'rotate(180deg)'}} src={arrow}/>
+                </Link>
+                <p style={{color: '#f4f4f4', fontSize: '20px', lineHeight: '28px', fontFamily: 'Raleway'}}>Цвет основы</p>
+                <button style={{border: 'none', background: 'transparent', height: '28px'}}>
+                    <img style={{height: '28px'}} src={arrow}/>
+                </button>
+            </div>
+            <Step1ColorCarousel />
         </div>
     )
 }

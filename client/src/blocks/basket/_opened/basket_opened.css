@@ -1,0 +1,4 @@
+.basket_opened {
+    transform: translateX(0);
+    transition: transform 0.3s;
+}

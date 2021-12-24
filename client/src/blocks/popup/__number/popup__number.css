@@ -1,7 +1,8 @@
 .popup__number{
-    font-weight: 600;
-    font-size: 92px;
-    line-height: 102px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
     letter-spacing: -0.65px;
+    color: #F5A937;
     margin: 0;
 }

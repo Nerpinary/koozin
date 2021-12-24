@@ -6,6 +6,21 @@
 @import url(./blocks/header/__menu-button/header__menu-button.css);
 @import url(./blocks/header/__link/header__link.css);
 @import url(./blocks/header/__cart-button/header__cart-button.css);
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_opened/popup_opened.css);
+@import url(./blocks/popup/__container/popup__container.css);
+@import url(./blocks/popup/__number/popup__number.css);
+@import url(./blocks/popup/__title/popup__title.css);
+@import url(./blocks/popup/__text/popup__text.css);
+@import url(./blocks/menu/menu.css);
+@import url(./blocks/menu/_opened/menu_opened.css);
+@import url(./blocks/basket/basket.css);
+@import url(./blocks/basket/_opened/basket_opened.css);
+@import url(./blocks/carousels/carousels.css);
+@import url(./blocks/slidecolor/slidecolor.css);
+@import url(blocks/backgrounds/backgrounds.css);
+@import url(./blocks/colortexts/colortexts.css);
+@import url(./blocks/glitch/glitch.css);
 
 body{
     font-family: 'Inter', 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
