@@ -145,7 +145,7 @@ const Shop = observer(() => {
             <button className='' style={{
                 backgroundColor: 'transparent',
                 color: "#ED5A51",
-                alignSelf: 'end',
+                alignSelf: 'flex-end',
                 border: 'none',
                 backgroundImage: arrow,
                 backgroundSize: 24,

@@ -5,18 +5,15 @@
 .backgrounds-black {
     background-color: #161616;
     transition: background-color 0.5s;
-    animation: glitch-anim-2-vertical 1s linear;
 }
 .backgrounds-white {
     background-color: #bdb0a4;
     transition: background-color 0.5s;
-    animation: glitch-effect3 0.5s linear;
 }
 
 .backgrounds-grey {
     background-color: #36363D;
     transition: background-color 0.5s;
-    animation: glitch-effect1 0.5s linear;
 }
 
 @keyframes glitch-effect1 {

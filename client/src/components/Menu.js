@@ -10,7 +10,7 @@ const Menu = ({handleClose}) => {
                     <img src={close} />
                 </button>
                 <p style={{color: '#f4f4f4', fontSize: 14, lineHeight: '22px', marginTop: '48px', transform: 'rotate(90deg)', width: 'fit-content', fontFamily: 'Raleway', marginLeft: '-24px'}}>koozin</p>
-                <Link style={{color: '#f4f4f4', textDecoration: 'none', fontFamily: 'Raleway', fontSize: 36, lineHeight: '42px'}} to='/'>
+                <Link onClick={handleClose} style={{color: '#f4f4f4', textDecoration: 'none', fontFamily: 'Raleway', fontSize: 36, lineHeight: '42px'}} to='/'>
                     Конструктор
                     <div style={{width:'100%', height: '1px', background: '#f4f4f4', marginTop: '16px', marginBottom: '20px'}}></div>
                 </Link>

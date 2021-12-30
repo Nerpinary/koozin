@@ -6,6 +6,7 @@ import {observer} from "mobx-react-lite";
 import {ADMIN_ROUTE, LOGIN_ROUTE} from "../utils/consts";
 import Menu from "./Menu";
 import Basket from "./Basket";
+import Logo from '../images/logo.svg'
 
 const Header = observer(() => {
     const {user} = useContext(Context)
@@ -40,15 +41,16 @@ const Header = observer(() => {
             <Link className='header__link' to=''>Отдельные детали</Link>
             <Link className='header__link' to=''>Как это работает</Link>
         </div>
-        {user.isAuth ?
-            <div>
-                <Button className='header__link' onClick={() => history.push(ADMIN_ROUTE)}>Админка</Button>
-                <Button className='header__link' onClick={() => logOut()}>Выйти</Button>
-            </div>
-            : <div>
-                <Button className='header__link' onClick={() => history.push(LOGIN_ROUTE)}>Войти</Button>
-            </div>
-        }
+        <Link to='/'><img style={{height: '14px'}} src={Logo} /></Link>
+        {/*{user.isAuth ?*/}
+        {/*    <div>*/}
+        {/*        <Button className='header__link' onClick={() => history.push(ADMIN_ROUTE)}>Админка</Button>*/}
+        {/*        <Button className='header__link' onClick={() => logOut()}>Выйти</Button>*/}
+        {/*    </div>*/}
+        {/*    : <div>*/}
+        {/*        <Button className='header__link' onClick={() => history.push(LOGIN_ROUTE)}>Войти</Button>*/}
+        {/*    </div>*/}
+        {/*}*/}
         <button onClick={handlerBasket} className='header__cart-button' />
     </div>
     );

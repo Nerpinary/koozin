@@ -6,6 +6,7 @@ import ProductList from "../components/ProductList";
 import {Container} from "react-bootstrap";
 import Step1Swiper from '../components/Step1Swiper'
 import BottomPanel from "../components/BottomPanel";
+import Step1ColorCarousel from "../components/Step1ColorCarousel";
 
 
 function Step1() {
@@ -31,7 +32,7 @@ function Step1() {
             />
             <Step1Swiper />
             {/*<ProductList />*/}
-            <BottomPanel />
+            <BottomPanel carousel={<Step1ColorCarousel />} linkNext='/step2' linkBack='/' title='Цвет основы' />
         </Container>
     )
 }

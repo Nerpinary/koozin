@@ -21,6 +21,11 @@
 @import url(blocks/backgrounds/backgrounds.css);
 @import url(./blocks/colortexts/colortexts.css);
 @import url(./blocks/glitch/glitch.css);
+@import url(./blocks/color-changer/color-changer.css);
+@import url(./blocks/color-changer/_hide/color-changer_hide.css);
+@import url(./blocks/color-changer/__button-hider/color-changer__button-hider.css);
+@import url(./blocks/color-changer/__item/color-changer__item.css);
+@import url(./blocks/stripe/stripe.css);
 
 body{
     font-family: 'Inter', 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;

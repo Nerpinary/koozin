@@ -9,7 +9,12 @@ import desc1 from '../images/black.svg'
 import desc2 from '../images/white.svg'
 import desc3 from '../images/grey.svg'
 
+export let selector = ''
+
 export default function Step1Swiper() {
+
+    let clientXStart = ''
+    let clientXEnd = ''
 
     const handleCol = () => {
         let colslides = []
@@ -24,17 +29,12 @@ export default function Step1Swiper() {
                 colslides[i].classList.remove('slidecolor')
             }
         }
-        console.log(slides)
-        console.log(colslides)
     }
 
     const handleBack = () => {
         let back = document.querySelector('.backgrounds')
         let texts = document.querySelectorAll('.colortexts')
         let selectedColor = document.querySelector('.selected').children[0].children[0].alt
-        console.log(selectedColor)
-        console.log(back)
-        console.log(texts)
         if (selectedColor === 'white') {
             back.classList.remove('backgrounds-black')
             back.classList.remove('backgrounds-grey')
@@ -73,41 +73,52 @@ export default function Step1Swiper() {
         }
     }
 
+    const handleSelectColor = () => {
+        let selectedColor = document.querySelector('.selected').children[0].children[0].alt
+        selector = selectedColor
+    }
+
+    setTimeout(handleSelectColor, 300)
+
     return (
         <>
-            <div className='backgrounds backgrounds-black' style={{height: 'calc(100vh - 120px)', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'absolute', top: 0, left: 0, width: '100%'}}></div>
+            <div className='backgrounds backgrounds-black' style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'absolute', top: 0, left: 0, width: '100%'}}></div>
             <Carousel
-                // style={{height: '100%', marginTop: '-60px'}}
                 showThumbs={false}
                 showStatus={false}
                 showIndicators={false}
                 showArrows={true}
+                onSwipeStart={(event: React.TouchEvent) => {
+                    clientXStart = event.changedTouches[0].screenX
+                }}
                 onSwipeEnd={(event: React.TouchEvent) => {
                     let buttons = document.querySelectorAll('.control-arrow')
-                    if (event.changedTouches[0].screenX > 2280) {
+                    clientXEnd = event.changedTouches[0].screenX
+                    if (clientXEnd > clientXStart) {
                         buttons[2].click()
                     } else {
                         buttons[3].click()
                     }
                     setTimeout(handleCol, 300)
                     setTimeout(handleBack, 300)
+                    setTimeout(handleSelectColor, 300)
                 }}
                 arr
             >
-                <div style={{height: 'calc(100vh - 120px)', width: '100vw', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+                <div style={{height: 'calc(100vh - 100px)', width: '100vw', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
                     <img style={{width: '60%', position: 'absolute', top: '50%', transform: 'translate(-50%, -50%)', left: '50%', zIndex: 3}} src={black} alt='black' />
                     <img style={{width: '80%', position: 'absolute', top: '50%', transform: 'translate(-50%, -50%)', left: '50%'}} src={glow} />
-                    <img className='colortexts colortexts_active' style={{width: '70%', position: 'absolute', bottom: 0, right: 0, zIndex: 4}} src={desc1} alt='black' />
+                    <img className='colortexts colortexts_active' src={desc1} alt='black' />
                 </div>
-                <div style={{height: 'calc(100vh - 120px)', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+                <div style={{height: 'calc(100vh - 100px)', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
                     <img style={{width: '60%', position: 'absolute', top: '50%', transform: 'translate(-50%, -50%)', left: '50%', zIndex: 3}} src={white} alt='white' />
                     <img style={{width: '80%', position: 'absolute', top: '50%', transform: 'translate(-50%, -50%)', left: '50%'}} src={glow} />
-                    <img className='colortexts colortexts_active' style={{width: '70%', position: 'absolute', bottom: 0, right: 0, zIndex: 4}} src={desc2} alt='white' />
+                    <img className='colortexts colortexts_active' src={desc2} alt='white' />
                 </div>
-                <div style={{height: 'calc(100vh - 120px)', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
+                <div style={{height: 'calc(100vh - 100px)', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}>
                     <img style={{width: '60%', position: 'absolute', top: '50%', transform: 'translate(-50%, -50%)', left: '50%', zIndex: 3}} src={grey} alt='grey' />
                     <img style={{width: '80%', position: 'absolute', top: '50%', transform: 'translate(-50%, -50%)', left: '50%'}} src={glow} />
-                    <img className='colortexts colortexts_active' style={{width: '70%', position: 'absolute', bottom: 0, right: 0, zIndex: 4}} src={desc3} alt='grey' />
+                    <img className='colortexts colortexts_active' src={desc3} alt='grey' />
                 </div>
             </Carousel>
 

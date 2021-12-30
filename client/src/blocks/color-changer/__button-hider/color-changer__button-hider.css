@@ -1,0 +1,16 @@
+.color-changer__button-hider {
+    background: url(../../../images/pngwing.com.png) no-repeat;
+    background-size: 24px;
+    border: none;
+    position: absolute;
+    top: -28px;
+    height: 24px;
+    width: 24px;
+    left: calc(50% - 12px);
+    transition: transform 0.3s;
+}
+
+.color-changer__button-hider_rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
